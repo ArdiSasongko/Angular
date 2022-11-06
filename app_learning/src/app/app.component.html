@@ -1,9 +1,14 @@
 <div class="container">
+  <h2 style="text-align:center;">{{title}}</h2>
+      <app-file
+      (dispAdded)="onDispAdded($event)">
+    </app-file>
+    <br>
   <div class="row">
     <div class="col-xs-12">
-      <h2 style="text-align:center;">{{title}}</h2>
-      <app-file></app-file>
-      <app-display></app-display>
+      <app-display *ngFor="let items of itemElement"
+      [ItemElements]="items"
+      (deleteDisp)="onDelete($event)"></app-display>
     </div>
   </div>
 </div>
