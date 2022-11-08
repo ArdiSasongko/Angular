@@ -1,0 +1,14 @@
+.flex{
+    display: flex;
+    padding: 10px 0;
+    margin: 5px;
+}
+
+.item{
+    height: auto;
+    width: 100px;
+    padding-left: 10px;
+    justify-items: center;
+    background-color:rgb(170, 179, 255);
+    border-radius: 5px;
+}

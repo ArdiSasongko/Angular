@@ -1,0 +1,6 @@
+<div class="container">
+    <div class="flex" *ngFor="let item of items">
+        <div class="item">{{item.title}}</div>
+        <button class="btn btn-primary" (click)="detail(item)">Detail</button>
+    </div>
+</div>
